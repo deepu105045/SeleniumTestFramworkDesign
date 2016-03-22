@@ -1,0 +1,44 @@
+package com.masteringselenium;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+public class DriverFactory {
+	private static List<WebDriverThread> webDriverThreadPool= Collections.synchronizedList(new ArrayList<WebDriverThread>());
+	private static ThreadLocal<WebDriverThread> driverThread;
+	
+	@BeforeSuite
+	public static void instantiateDriverObject(){
+		driverThread=new ThreadLocal<WebDriverThread>(){
+			@Override
+			protected WebDriverThread initialValue(){
+				System.out.println("inside initialValue");
+				WebDriverThread webDriverThread=new WebDriverThread();
+				webDriverThreadPool.add(webDriverThread);
+				System.out.println("THREAD ADDED TO THREADPOOL");
+				return webDriverThread;
+			}
+		};
+
+	}
+	public static WebDriver getDriver() throws Exception{
+		return driverThread.get().getDriver();
+	}
+	
+	@AfterMethod
+	public static void quitDriver() throws Exception{
+		getDriver().manage().deleteAllCookies();
+	}
+	@AfterSuite
+	public static void closeDriverObjects(){
+		for(WebDriverThread webDriverThread:webDriverThreadPool){
+			webDriverThread.quiteDriver();
+		}
+	}
+
+}
