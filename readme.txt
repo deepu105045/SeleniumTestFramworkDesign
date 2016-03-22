@@ -4,4 +4,8 @@ Selenium Profile
 2. Maven
 3. Jenkins 
 4. Git
-6. GhostDriver
+5. GhostDriver
+
+
+Soap UI/Ready API
+WebLoad for performance testing
