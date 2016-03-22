@@ -1,5 +1,5 @@
-/Users/dnair/Documents/knowIt/runSeleniumTest/src/test/java/com/masteringselenium/config/DriverSetup.java
-/Users/dnair/Documents/knowIt/runSeleniumTest/src/test/java/com/masteringselenium/WebDriverThread.java
-/Users/dnair/Documents/knowIt/runSeleniumTest/src/test/java/com/masteringselenium/BasicTestWD.java
-/Users/dnair/Documents/knowIt/runSeleniumTest/src/test/java/com/masteringselenium/config/DriverType.java
-/Users/dnair/Documents/knowIt/runSeleniumTest/src/test/java/com/masteringselenium/DriverFactory.java
+/Users/dnair/Documents/knowIt/seleniumFrameWork/src/test/java/com/masteringselenium/DriverFactory.java
+/Users/dnair/Documents/knowIt/seleniumFrameWork/src/test/java/com/masteringselenium/WebDriverThread.java
+/Users/dnair/Documents/knowIt/seleniumFrameWork/src/test/java/com/masteringselenium/config/DriverSetup.java
+/Users/dnair/Documents/knowIt/seleniumFrameWork/src/test/java/com/masteringselenium/config/DriverType.java
+/Users/dnair/Documents/knowIt/seleniumFrameWork/src/test/java/com/masteringselenium/BasicTestWD.java
