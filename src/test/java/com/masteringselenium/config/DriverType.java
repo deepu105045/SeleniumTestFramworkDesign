@@ -7,11 +7,26 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 
 public enum DriverType implements DriverSetup{
+	IE{
+		public DesiredCapabilities getDesiredCapabilites() {
+			DesiredCapabilities capabilities=DesiredCapabilities.internetExplorer();
+			capabilities.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true);
+			capabilities.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING,true);
+			capabilities.setCapability("requiredWinndowFocus", true);
+			return capabilities;
+		}
+		public WebDriver getWebDriverObject(DesiredCapabilities capabilities) {
+			return new FirefoxDriver(capabilities);
+		}
+		
+	},
 	FIREFOX{
 		public DesiredCapabilities getDesiredCapabilites() {
 			DesiredCapabilities capabilities=DesiredCapabilities.firefox();

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.masteringselenium.BasicTestWD
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.307 sec - in com.masteringselenium.BasicTestWD
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.185 sec - in com.masteringselenium.BasicTestWD

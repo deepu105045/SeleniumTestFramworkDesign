@@ -17,10 +17,8 @@ public class DriverFactory {
 		driverThread=new ThreadLocal<WebDriverThread>(){
 			@Override
 			protected WebDriverThread initialValue(){
-				System.out.println("inside initialValue");
 				WebDriverThread webDriverThread=new WebDriverThread();
 				webDriverThreadPool.add(webDriverThread);
-				System.out.println("THREAD ADDED TO THREADPOOL");
 				return webDriverThread;
 			}
 		};
