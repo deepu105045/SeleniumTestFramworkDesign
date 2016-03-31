@@ -9,9 +9,9 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<selenium.version>2.52.0</selenium.version>
 		<threads>3</threads>
-		<browser>firefox</browser>
+		<browser>chrome</browser>
 		<overwrite.binaries>false</overwrite.binaries>
-		<remote>true</remote>
+		<remote>false</remote>
 		<seleniumGridURL>http://localhost:4444/wd/hub</seleniumGridURL>
 		<platform></platform>
 		<browserVersion></browserVersion>
@@ -33,6 +33,7 @@
 							<threadCount>${threads}</threadCount>
 							<systemProperties>
 								<browser>${browser}</browser>
+								<screenshotDirectory>${project.build.directory}/screenshots</screenshotDirectory>
 								<remoteDriver>${remote}</remoteDriver>
 								<gridURL>${seleniumGridURL}</gridURL>
 								<desiredPlatform>${platform}</desiredPlatform>

@@ -1,11 +1,23 @@
-Selenium Profile 
+-------------------------------------------------Add to Resume---------------------------------------------------
+1. 	Selenium WebDriver
+2. 	Maven
+3. 	Jenkins 
+4. 	Git
+5. 	GhostDriver
+6. 	Selenium Page object model 
+7. 	TestNg 
+8. 	Selenium Grid 
+9. 	Browser mob
+10.	Speedtest.io
+11. WebLoad
+12. Ready API
 
-1. Selenium WebDriver
-2. Maven
-3. Jenkins 
-4. Git
-5. GhostDriver
+-------------------------------------------------Have to learn---------------------------------------------------
+1.Listeners.
+2.TetsNg Reports.
 
+
+------------------------------------------------SELENIUM INFO----------------------------------------------------
 
 Soap UI/Ready API
 WebLoad for performance testing

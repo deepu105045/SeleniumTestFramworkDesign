@@ -1,7 +1,9 @@
 package com.masteringselenium;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BasicTestWD extends DriverFactory{
@@ -23,18 +25,22 @@ public class BasicTestWD extends DriverFactory{
 		
 	}
 	
-	@Test
-	public void googleCheeseExample() throws Exception{
-		googleExampleThatSearchesFor("Cheese1");
-	}
 	
 	@Test
+	public void googleCheeseExample() throws Exception{
+		System.out.println("isJqueryExecutionCompleted: "+AdditionalConditions.jQueryAJAXCallsHaveCompleted());
+		googleExampleThatSearchesFor("Cheese1");
+		System.out.println("isJqueryExecutionCompleted: "+AdditionalConditions.jQueryAJAXCallsHaveCompleted());
+	}
+	
+	/*@Test
 	public void googleMilkExample() throws Exception{
 		googleExampleThatSearchesFor("Milk");
 	}
 	@Test
 	public void googleSachineExample() throws Exception{
 		googleExampleThatSearchesFor("Sachin");
+		Assert.fail();
 	}
 	@Test
 	public void googleDohniExample() throws Exception{
@@ -43,6 +49,6 @@ public class BasicTestWD extends DriverFactory{
 	@Test
 	public void googleGangulyExample() throws Exception{
 		googleExampleThatSearchesFor("Ganguly");
-	}
+	}*/
 
 }

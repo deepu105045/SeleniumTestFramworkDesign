@@ -5,12 +5,8 @@
     <classes>
       <class name="com.masteringselenium.BasicTestWD">
         <methods>
-          <include name="googleSachineExample"/>
-          <include name="googleMilkExample"/>
           <include name="quitDriver"/>
-          <include name="googleDohniExample"/>
           <include name="googleCheeseExample"/>
-          <include name="googleGangulyExample"/>
           <include name="instantiateDriverObject"/>
         </methods>
       </class> <!-- com.masteringselenium.BasicTestWD -->

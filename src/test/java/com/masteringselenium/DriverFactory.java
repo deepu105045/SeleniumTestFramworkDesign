@@ -1,6 +1,7 @@
 package com.masteringselenium;
 
 import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -8,6 +9,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
+
+import com.masteringselenium.listeners.ScreenshotListener;
+
+@Listeners(ScreenshotListener.class)
 public class DriverFactory {
 	private static List<WebDriverThread> webDriverThreadPool= Collections.synchronizedList(new ArrayList<WebDriverThread>());
 	private static ThreadLocal<WebDriverThread> driverThread;
