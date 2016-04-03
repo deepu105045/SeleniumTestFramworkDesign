@@ -1,3 +1,25 @@
-username : deepu105045@gmail.com/Infy1234
-Group    : Administrator
-User     : AutomationTester/Password[Administrator]
+username 	: deepu105045@gmail.com/Infy1234
+Group    	: Administrator
+User     	: AutomationTester/Password[Administrator]
+VPC Name	: VPC_US_WEST
+
+1. Create an account in AWS
+2. Create IAM USer 
+3. Create Group 
+4. Add user to the Group 
+5. Create VPC (Virtual private Cloud)
+6. Create Security group and add rules to the vpc
+7. Create instance eg : windows machine
+	To connect to Windows instance
+	Public DNS	ec2-54-186-192-12.us-west-2.compute.amazonaws.com
+	User name	Administrator
+	Password	qVg*ePA9FP=	
+
+
+
+
+
+
+
+
+
