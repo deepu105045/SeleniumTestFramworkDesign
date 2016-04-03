@@ -9,10 +9,10 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<selenium.version>2.52.0</selenium.version>
 		<threads>3</threads>
-		<browser>chrome</browser>
+		<browser>firefox</browser>
 		<overwrite.binaries>false</overwrite.binaries>
-		<remote>false</remote>
-		<seleniumGridURL>http://localhost:4444/wd/hub</seleniumGridURL>
+		<remote>true</remote>
+		<seleniumGridURL>http://172.31.16.147:5556/wd/hub</seleniumGridURL>
 		<platform></platform>
 		<browserVersion></browserVersion>
 	</properties>

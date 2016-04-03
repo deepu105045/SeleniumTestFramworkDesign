@@ -28,12 +28,10 @@ public class BasicTestWD extends DriverFactory{
 	
 	@Test
 	public void googleCheeseExample() throws Exception{
-		System.out.println("isJqueryExecutionCompleted: "+AdditionalConditions.jQueryAJAXCallsHaveCompleted());
 		googleExampleThatSearchesFor("Cheese1");
-		System.out.println("isJqueryExecutionCompleted: "+AdditionalConditions.jQueryAJAXCallsHaveCompleted());
 	}
 	
-	/*@Test
+	@Test
 	public void googleMilkExample() throws Exception{
 		googleExampleThatSearchesFor("Milk");
 	}
@@ -49,6 +47,6 @@ public class BasicTestWD extends DriverFactory{
 	@Test
 	public void googleGangulyExample() throws Exception{
 		googleExampleThatSearchesFor("Ganguly");
-	}*/
+	}
 
 }
