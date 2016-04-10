@@ -11,12 +11,22 @@ VPC Name	: VPC_US_WEST
 6. Create Security group and add rules to the vpc
 7. Create instance eg : windows machine
 	To connect to Windows instance
+	Jenkins Server
 	Public DNS	ec2-54-186-192-12.us-west-2.compute.amazonaws.com
 	User name	Administrator
 	Password	qVg*ePA9FP=	
 
+8.    	SeleniumHub
+	Public DNS	ec2-54-200-14-232.us-west-2.compute.amazonaws.com
+	User name	Administrator
+	Password	NK.%UcMF7jA
 
+9.      SeleniumNode
+	Public DNS	ec2-54-191-242-172.us-west-2.compute.amazonaws.com
+	User name	Administrator
+	Password	aXT486Tvwt
 
+	
 
 
 

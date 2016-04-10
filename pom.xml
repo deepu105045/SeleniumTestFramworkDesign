@@ -11,7 +11,7 @@
 		<threads>3</threads>
 		<browser>firefox</browser>
 		<overwrite.binaries>false</overwrite.binaries>
-		<remote>true</remote>
+		<remote>false</remote>
 		<seleniumGridURL>http://172.31.16.147:5556/wd/hub</seleniumGridURL>
 		<platform></platform>
 		<browserVersion></browserVersion>
@@ -40,7 +40,7 @@
 								<desiredBrowserVersion>${browserVersion}</desiredBrowserVersion>
 							</systemProperties>
 							<includes>
-								<include>**/*WD.java</include>
+								<include>**/*BasicTestWD.java</include>
 							</includes>
 						</configuration>
 						<executions>
